@@ -1,0 +1,266 @@
+@import 'base';
+@import 'components';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    background-color: $primaryColor;
+    color: $textColor;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+
+    section {
+
+        &.spotify {
+
+            box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px, rgba(29, 29, 29, 0.74) 0px 0px 0px 1px inset;
+            padding: 20px;
+
+            .actions a {
+                @include flexBox;
+            }
+
+            .library {
+                @include flexBox;
+                flex-direction: column;
+
+                .create {
+
+                    .add {
+                        @include flexBox;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 0 15px;
+
+
+                        >p {
+                            background-color: $whiteColor;
+                            color: $primaryColor;
+                            border-radius: 20px;
+                            padding: 8px 8px;
+                            font-weight: 600;
+                            font-size: 12px
+                        }
+                    }
+
+                    .busqueda {
+                        @include flexBox;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        padding: 0 15px;
+                        width: 100%;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            >i {
+                                font-size: 19px;
+                            }
+                        }
+
+                    }
+                }
+
+                .artist {
+                    @extend %cursorPointer;
+                    @include flexBox;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: left;
+                    width: 100%;
+                    gap: 10px;
+                    margin-top: 10px;
+                    padding: 0 5px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-size: auto;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        font-weight: 600;
+                        @extend %text;
+
+                    }
+
+                    &:nth-child(6) {
+
+                        border-radius: 5px;
+                        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, $greenColor 0px 0px 8px;
+
+                        p {
+                            color: $greenColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.artist_cover {
+            background: linear-gradient(#f69c3cad 150px, #000000 500px);
+
+
+
+            .header {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 320px;
+                padding: 0 30px;
+                color: $whiteColor;
+                background-image: url('../img/banner.webp');
+                background-size: cover;
+                background-position: center;
+
+
+                .nav {
+                    @include flexBox;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .arrows {
+                        @extend %cursorPointer;
+                        @include flexBox;
+                        align-items: center;
+                        gap: 30px;
+
+                        i {
+                            font-size: 20px;
+                            color: $whiteColor;
+                            background-color: rgba(0, 0, 0, 0.407);
+                            padding: 7px;
+                            border-radius: 50%;
+                            text-align: center;
+                        }
+                    }
+
+                    .app {
+                        @include flexBox;
+                        @extend %cursorPointer;
+                        align-items: center;
+                        gap: 10px;
+
+                        p {
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: $whiteColor;
+                            background-color: rgba(0, 0, 0, 0.407);
+                            padding: 7px;
+                            border-radius: 20px;
+                        }
+
+                        i {
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: $whiteColor;
+                            background-color: rgba(0, 0, 0, 0.407);
+                            padding: 7px;
+                            border-radius: 20px;
+                        }
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            background-size: auto;
+                        }
+                    }
+                }
+
+                .artist_info {
+
+                    margin: 0;
+                    gap: 10px;
+
+                    >div {
+                        @include flexBox;
+                        align-items: center;
+                        gap: 5px;
+
+                        i {
+                            @include flexCenter;
+                            width: 18px;
+                            height: 18px;
+                            font-size: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(0, 136, 255, 0.953);
+                            color: $whiteColor;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            color: $whiteColor;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 48px;
+                        font-weight: 900;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .play_button {
+                @include flexBox;
+                @extend %cursorPointer;
+                align-items: center;
+                gap: 20px;
+                padding: 0 30px;
+
+                i:first-child {
+                    font-size: 25px;
+                    color: $primaryColor;
+                    background-color: $greenColor;
+                    padding: 8px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: $whiteColor;
+                    background-color: rgba(0, 0, 0, 0.407);
+                    padding: 7px;
+                    border-radius: 20px;
+                    border: 0.5px solid $whiteColor;
+
+                }
+            }
+
+
+            .popular {
+                padding: 0 30px;
+
+                h2 {
+                    color: $whiteColor;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}

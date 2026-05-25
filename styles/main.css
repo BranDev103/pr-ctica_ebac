@@ -1,0 +1,258 @@
+main section.spotify .library .artist p {
+  color: #d0cfcf;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 15px;
+}
+
+main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
+  cursor: pointer;
+}
+
+.actions {
+  gap: 10px;
+}
+.actions a {
+  text-decoration: none;
+  color: #d0cfcf;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.actions a:nth-child(2) {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+main section.spotify .library .artist p {
+  color: #d0cfcf;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 15px;
+}
+
+main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
+  cursor: pointer;
+}
+
+.actions {
+  gap: 10px;
+}
+.actions a {
+  text-decoration: none;
+  color: #d0cfcf;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.actions a:nth-child(2) {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: #d0cfcf;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+main section.spotify {
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px, rgba(29, 29, 29, 0.74) 0px 0px 0px 1px inset;
+  padding: 20px;
+}
+main section.spotify .actions a {
+  display: flex;
+}
+main section.spotify .library {
+  display: flex;
+  flex-direction: column;
+}
+main section.spotify .library .create .add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+}
+main section.spotify .library .create .add > p {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  padding: 8px 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+main section.spotify .library .create .busqueda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 15px;
+  width: 100%;
+}
+main section.spotify .library .create .busqueda div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main section.spotify .library .create .busqueda div > i {
+  font-size: 19px;
+}
+main section.spotify .library .artist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+main section.spotify .library .artist img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: auto;
+}
+main section.spotify .library .artist p {
+  font-size: 13px;
+  font-weight: 600;
+}
+main section.spotify .library .artist:nth-child(6) {
+  border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, #1DB954 0px 0px 8px;
+}
+main section.spotify .library .artist:nth-child(6) p {
+  color: #1DB954;
+}
+main section.artist_cover {
+  background: linear-gradient(rgba(246, 156, 60, 0.6784313725) 150px, #000000 500px);
+}
+main section.artist_cover .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+  padding: 0 30px;
+  color: #ffffff;
+  background-image: url("../img/banner.webp");
+  background-size: cover;
+  background-position: center;
+}
+main section.artist_cover .header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.artist_cover .header .nav .arrows {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main section.artist_cover .header .nav .arrows i {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.407);
+  padding: 7px;
+  border-radius: 50%;
+  text-align: center;
+}
+main section.artist_cover .header .nav .app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main section.artist_cover .header .nav .app p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.407);
+  padding: 7px;
+  border-radius: 20px;
+}
+main section.artist_cover .header .nav .app i {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.407);
+  padding: 7px;
+  border-radius: 20px;
+}
+main section.artist_cover .header .nav .app img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: auto;
+}
+main section.artist_cover .header .artist_info {
+  margin: 0;
+  gap: 10px;
+}
+main section.artist_cover .header .artist_info > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main section.artist_cover .header .artist_info > div i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 136, 255, 0.953);
+  color: #ffffff;
+}
+main section.artist_cover .header .artist_info > div p {
+  font-size: 12px;
+  color: #ffffff;
+}
+main section.artist_cover .header .artist_info h1 {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+main section.artist_cover .play_button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
+}
+main section.artist_cover .play_button i:first-child {
+  font-size: 25px;
+  color: #000000;
+  background-color: #1DB954;
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center;
+}
+main section.artist_cover .play_button p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.407);
+  padding: 7px;
+  border-radius: 20px;
+  border: 0.5px solid #ffffff;
+}
+main section.artist_cover .popular {
+  padding: 0 30px;
+}
+main section.artist_cover .popular h2 {
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
