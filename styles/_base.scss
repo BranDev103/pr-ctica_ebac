@@ -16,6 +16,10 @@ $fontFamily: 'Roboto', sans-serif;
     justify-content: center;
 }
 
+@mixin grid{
+    display: grid;
+}
+
 %text {
     color: $textColor;
     text-decoration: none;

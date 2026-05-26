@@ -247,10 +247,30 @@ main {
             .popular {
                 padding: 0 30px;
 
+
                 h2 {
                     color: $whiteColor;
                 }
 
+                .song {
+                    width: 100%;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        p {
+                            color: $whiteColor;
+                        }
+
+                        i {
+                            color: $whiteColor;
+                        }
+
+
+                    }
+                }
             }
 
         }

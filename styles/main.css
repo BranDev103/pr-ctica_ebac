@@ -249,6 +249,20 @@ main section.artist_cover .popular {
 main section.artist_cover .popular h2 {
   color: #ffffff;
 }
+main section.artist_cover .popular .song {
+  width: 100%;
+}
+main section.artist_cover .popular .song div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main section.artist_cover .popular .song div p {
+  color: #ffffff;
+}
+main section.artist_cover .popular .song div i {
+  color: #ffffff;
+}
 
 footer {
   display: flex;
