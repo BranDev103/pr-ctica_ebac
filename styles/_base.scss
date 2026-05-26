@@ -20,6 +20,14 @@ $fontFamily: 'Roboto', sans-serif;
     display: grid;
 }
 
+@mixin hoverEffect {
+    transition: all 0.3s ease;
+    &:hover {
+        transform:scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px -10px;
+    }
+}
+
 %text {
     color: $textColor;
     text-decoration: none;

@@ -5,7 +5,7 @@ main section.spotify .library .artist p {
   gap: 15px;
 }
 
-main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
+main section.artist_cover .popular h3, main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
   cursor: pointer;
 }
 
@@ -31,7 +31,7 @@ main section.spotify .library .artist p {
   gap: 15px;
 }
 
-main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
+main section.artist_cover .popular h3, main section.artist_cover .play_button, main section.artist_cover .header .nav .app, main section.artist_cover .header .nav .arrows, main section.spotify .library .artist {
   cursor: pointer;
 }
 
@@ -234,6 +234,13 @@ main section.artist_cover .play_button i:first-child {
   border-radius: 50%;
   text-align: center;
 }
+main section.artist_cover .play_button i:hover {
+  transition: all 0.3s ease;
+}
+main section.artist_cover .play_button i:hover:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px -10px;
+}
 main section.artist_cover .play_button p {
   font-size: 12px;
   font-weight: 600;
@@ -244,29 +251,76 @@ main section.artist_cover .play_button p {
   border: 0.5px solid #ffffff;
 }
 main section.artist_cover .popular {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 main section.artist_cover .popular h2 {
   color: #ffffff;
 }
 main section.artist_cover .popular .song {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 main section.artist_cover .popular .song div {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
-main section.artist_cover .popular .song div p {
-  color: #ffffff;
+main section.artist_cover .popular .song div img {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+main section.artist_cover .popular .song div .play_song {
+  color: #1DB954;
 }
 main section.artist_cover .popular .song div i {
-  color: #ffffff;
+  color: #1DB954;
+}
+main section.artist_cover .popular h3 {
+  color: #d0cfcf;
+  text-align: left;
+  margin-top: 7px;
+  font-size: 14px;
+}
+main section.artist_cover .popular h3:hover {
+  color: #1DB954;
+}
+main section.artist_info h2 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #d0cfcf;
+}
+main section.artist_info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.artist_info > div img {
+  width: 100%;
+  position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main section.artist_info h1 {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
 }
 
+/*
 footer {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 20px;
-}/*# sourceMappingURL=main.css.map */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: $primaryColor;
+    border:1px solid red;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+    *//*# sourceMappingURL=main.css.map */
